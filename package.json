@@ -1,0 +1,22 @@
+{
+  "name": "fem_product_preview_card_component_main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/scss/main.scss src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwasi/FEM-product-preview-card-component-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwasi/FEM-product-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/cwasi/FEM-product-preview-card-component-main#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
