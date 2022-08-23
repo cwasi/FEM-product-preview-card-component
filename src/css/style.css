@@ -1,4 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  @media only screen and (max-width: 23.44em) {
+    .card {
+      width: 34rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 20rem 38rem; } }
+  .card__img-container {
+    width: 100%; }
+    @media only screen and (max-width: 23.44em) {
+      .card__img-container {
+        height: 50rem; } }
+  .card__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem; }
+    @media only screen and (max-width: 23.44em) {
+      .card__img {
+        border-radius: 1rem 1rem 0 0; } }
+  .card__body {
+    display: grid;
+    align-content: space-between;
+    padding: 3.5rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: white; }
+    @media only screen and (max-width: 23.44em) {
+      .card__body {
+        padding: 2rem;
+        border-radius: 0 0 1rem 1rem; } }
+  .card__title-small {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem; }
+  .card__title {
+    font-family: "Fraunces", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.9rem; }
+    @media only screen and (max-width: 23.44em) {
+      .card__title {
+        width: 30rem;
+        font-size: 3rem; } }
+  .card__paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
+  .card__prices {
+    display: flex;
+    align-items: center; }
+  .card__current-price {
+    margin-right: 2rem;
+    font-family: "Fraunces", sans-serif;
+    font-size: 3.5rem;
+    color: #3c8067; }
+  .card__old-price {
+    text-decoration: line-through; }
+  .card__btn {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    color: white;
+    background-color: #3c8067;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s; }
+    .card__btn:hover {
+      background-color: #1c232b; }
+  .card__icon {
+    margin-right: 0.5rem;
+    fill: white;
+    width: 2.8rem;
+    height: 2.8rem;
+    transform: translate(25%, 25%); }
+  .card * p {
+    color: #797979; }
+
+.attribution {
+  margin-top: auto;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 *,
 *::before,
 *::after {
@@ -9,11 +107,14 @@
 html {
   font-size: 62.5%;
   /* 1rem = 10px, 10px/16px = 62.5% */ }
+  @media only screen and (max-with: 23.4em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #3a3a3a;
+  color: #313131;
   background-color: #f2ebe3;
   height: 100%; }

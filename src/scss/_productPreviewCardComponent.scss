@@ -1,0 +1,123 @@
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 64rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: 23.44em) {
+    width: 34rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 38rem;
+  }
+
+  &__img-container {
+    width: 100%;
+    @media only screen and (max-width: 23.44em) {
+      height: 50rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+
+    @media only screen and (max-width: 23.44em) {
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+
+  &__body {
+    display: grid;
+    align-content: space-between;
+
+    padding: 3.5rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: $color-White;
+
+    @media only screen and (max-width: 23.44em) {
+      padding: 2rem;
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+
+  &__title-small {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+
+  &__title {
+    font-family: "Fraunces", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+    @media only screen and (max-width: 23.44em) {
+      width: 30rem;
+      font-size: 3rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  &__prices {
+    display: flex;
+    align-items: center;
+  }
+
+  &__current-price {
+    margin-right: 2rem;
+    font-family: "Fraunces", sans-serif;
+    font-size: 3.5rem;
+    color: $color-Dark-cyan;
+  }
+
+  &__old-price {
+    text-decoration: line-through;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    color: $color-White;
+    background-color: $color-Dark-cyan;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+    fill: $color-White;
+    width: 2.8rem;
+    height: 2.8rem;
+    transform: translate(25%, 25%);
+  }
+
+  & * p {
+    color: rgb(121, 121, 121);
+  }
+}
