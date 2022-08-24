@@ -14,14 +14,11 @@
   @media only screen and (max-width: 23.44em) {
     width: 34rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 20rem 38rem;
+    grid-template-rows: 1fr 38rem;
   }
 
   &__img-container {
     width: 100%;
-    @media only screen and (max-width: 23.44em) {
-      height: 50rem;
-    }
   }
 
   &__img {
