@@ -15,9 +15,13 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Overview
 
 ### Screenshot
+<img src="./screenshots/productPreviewCard_desktop.png" width=500>
 
+<img src="./screenshots/productPreviewCard_mobile.png" width=200>
 
 ### Links
+- Solution URL: [Source code](https://github.com/cwasi/FEM-product-preview-card-component)
+- Live Site URL: [Live site](https://cwasi-product-preview.netlify.app/)
 
 ## My process
 
@@ -25,6 +29,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - Semantic HTML5 markup
 - CSS
+- SCSS
 
 ## Author
 
