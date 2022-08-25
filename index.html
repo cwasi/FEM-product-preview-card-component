@@ -15,47 +15,46 @@
   </head>
   <body>
     <main>
-      <div class="card">
-        <div class="card__img-container">
-          <!-- <img
-            class="card__img"
-            src="img/image-product-mobile.jpg"
-            alt="Gabriella Essence Eau De Parfum photo"
-          /> -->
-
+    <div class="card">
+      <div class="card__img-container">
+        <picture>
+          <source
+            media="(max-width: 41.25em)"
+            srcset="img/image-product-mobile.jpg"
+            alt="perfume image"
+          />
           <img
             class="card__img"
-            srcset="img/image-product-mobile.jpg 375w, img/image-product-desktop.jpg 1000w"
-            sizes="(max-width: 24.44em) 375em"
-            alt="Gabrielle Essence Eau De Parfum photo"
             src="img/image-product-desktop.jpg"
+            alt="perfume image"
           />
+        </picture>
+      </div>
+      <div class="card__body">
+        <p class="card__title-small">perfume</p>
+        <h4 class="card__title">Gabrielle Essence Eau De Parfum</h4>
+        <p class="card__paragraph">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="card__prices">
+          <div class="card__current-price">$149.00</div>
+          <p class="card__old-price">$169.99</p>
         </div>
-        <div class="card__body">
-          <p class="card__title-small">perfume</p>
-          <h4 class="card__title">Gabrielle Essence Eau De Parfum</h4>
-          <p class="card__paragraph">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="card__prices">
-            <div class="card__current-price">$149.00</div>
-            <p class="card__old-price">$169.99</p>
-          </div>
-          <button class="card__btn">
-            <svg class="card__icon">
-              <use xlink:href="./img/icon-cart.svg#cart"></use>
-            </svg>
-            <div class="card__btn__text">Add to Cart</div>
-          </button>
-        </div>
+        <button class="card__btn">
+          <svg class="card__icon">
+            <use xlink:href="./img/icon-cart.svg#cart"></use>
+          </svg>
+          <div class="card__btn__text">Add to Cart</div>
+        </button>
+      </div>
+    </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/cwasi">cwasi</a>.
       </div>
     </main>
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/cwasi">cwasi</a>.
-    </div> -->
   </body>
 </html>

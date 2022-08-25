@@ -1,8 +1,5 @@
 .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 5rem 0;
 
   width: 64rem;
   border-radius: 1rem;
@@ -11,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media only screen and (max-width: 23.44em) {
+  @media only screen and (max-width: 41.25em) {
     width: 34rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 38rem;
@@ -26,7 +23,7 @@
     height: 100%;
     border-radius: 1rem 0 0 1rem;
 
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 41.25em) {
       border-radius: 1rem 1rem 0 0;
     }
   }
@@ -39,7 +36,7 @@
     border-radius: 0 1rem 1rem 0;
     background-color: $color-White;
 
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 41.25em) {
       padding: 2rem;
       border-radius: 0 0 1rem 1rem;
     }
@@ -56,7 +53,7 @@
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 3.9rem;
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 41.25em) {
       width: 30rem;
       font-size: 3rem;
     }

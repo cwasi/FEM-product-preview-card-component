@@ -8,9 +8,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
-  @media only screen and (max-with: 23.4em) {
+  @media only screen and (max-with: 41.25em) {
     font-size: 50%;
   }
 }
@@ -21,5 +26,12 @@ body {
   font-weight: 500;
   color: rgb(49, 49, 49);
   background-color: $color-Cream;
-  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
